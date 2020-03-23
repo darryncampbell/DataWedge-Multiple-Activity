@@ -30,17 +30,21 @@ This [example application hosted in github](https://github.com/darryncampbell/Da
 The DataWedge profiles are not automatically created for you, to use this app, first install it then create two profiles and associate them with the demo app as shown below:
 
 Two profiles, one for each activity
+
 ![DataWedge Profiles](https://raw.githubusercontent.com/darryncampbell/DataWedge-Multiple-Activity/master/screenshots/dw-profiles.jpg)
 
 The first profile is associated with the Main activity
+
 ![DataWedge Profiles](https://raw.githubusercontent.com/darryncampbell/DataWedge-Multiple-Activity/master/screenshots/dw-first-overview.jpg)
 ![DataWedge Profiles](https://raw.githubusercontent.com/darryncampbell/DataWedge-Multiple-Activity/master/screenshots/dw-first-associations.jpg)
 
 The second profile is associated with the Second activity
+
 ![DataWedge Profiles](https://raw.githubusercontent.com/darryncampbell/DataWedge-Multiple-Activity/master/screenshots/dw-second-overview.jpg)
 ![DataWedge Profiles](https://raw.githubusercontent.com/darryncampbell/DataWedge-Multiple-Activity/master/screenshots/dw-second-associations.jpg)
 
 The sample app itself will display the active profile in a text box at the top of the screen.  Notice the active profile changes depending on which activity is displayed:
+
 ![Demo app](https://raw.githubusercontent.com/darryncampbell/DataWedge-Multiple-Activity/master/screenshots/first.jpg)
 ![Demo app](https://raw.githubusercontent.com/darryncampbell/DataWedge-Multiple-Activity/master/screenshots/second.jpg)
 
