@@ -16,18 +16,20 @@ DataWedge has a number of ways to control the profile in effect or that profile'
 | The [SWITCH_SCANNER_API](https://techdocs.zebra.com/datawedge/latest/guide/api/switchscanner/) (or similar)  | Make a temporary modification to the current profile, for example changing the scanner or the scanner parameters.  | [The DataWedge API](https://techdocs.zebra.com/datawedge/latest/guide/api/)  |
 | The [SET_CONFIG_API](https://techdocs.zebra.com/datawedge/latest/guide/api/setconfig/)  |  Make a permanent change to the specified profile | [The DataWedge API](https://techdocs.zebra.com/datawedge/latest/guide/api/)  |
 
-Although any of the above mechanisms could technically work, the "Profile activity association" technique is the recommended approach for handling scanning across multiple activities.
+Although any of the above mechanisms could technically work, **the "Profile activity association" technique is the recommended approach for handling scanning across multiple activities**.
 
-1. Create the DataWedge Profile or Profiles your application requires.  If you need different activities to have different data capture behaviour, for example, to recognize different symbologies, then create multiple profiles.  If your application will only have a single data capture configuration across multiple activities then a single profile will suffice.
-Profiles can be created through [the DataWedge application](https://techdocs.zebra.com/datawedge/latest/guide/createprofile/) on the device, through the [CREATE_PROFILE](https://techdocs.zebra.com/datawedge/latest/guide/api/createprofile/) API or [mass deployed](https://techdocs.zebra.com/datawedge/latest/guide/settings/#massdeployment).
-2. Associate the appropriate profiles with their corresponding activities
+1. Create the DataWedge Profile or Profiles your application requires.  
+  - If you need different activities to have different data capture behaviour, for example to recognize different symbologies, then create multiple profiles.  
+  - If your application will only have a single data capture configuration across multiple activities then a single profile will suffice.
+  - Profiles can be created through [the DataWedge application](https://techdocs.zebra.com/datawedge/latest/guide/createprofile/) on the device, through the [CREATE_PROFILE](https://techdocs.zebra.com/datawedge/latest/guide/api/createprofile/) API or [mass deployed](https://techdocs.zebra.com/datawedge/latest/guide/settings/#massdeployment).
+2. [Associate](https://techdocs.zebra.com/datawedge/latest/guide/createprofile/) the appropriate profiles with their corresponding activities
 3. Deploy your application.  The scanner configuration will be automatically managed by DataWedge.
 
 ## Example
 
 This [example application hosted in github](https://github.com/darryncampbell/DataWedge-Multiple-Activity) uses two activities, each associated with a different profile, imaginatively named "First Profile" and "Second Profile".
 
-The DataWedge profiles are not automatically created for you, to use this app, first install it then create two profiles and associate them with the demo app as shown below:
+**The DataWedge profiles are not automatically created for you**, to use this app, first install it then create two profiles and associate them with the demo app as shown below:
 
 Two profiles, one for each activity
 
